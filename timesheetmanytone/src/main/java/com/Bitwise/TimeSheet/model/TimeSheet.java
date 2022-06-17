@@ -43,7 +43,7 @@ public class TimeSheet {
 	private int total;
 	
 @ManyToOne(cascade = CascadeType.DETACH,fetch = FetchType.EAGER)
-//@JsonIgnoreProperties("timesheet")
+
 @JsonProperty(access = JsonProperty.Access.READ_WRITE)
 private Resource resource ;
 	

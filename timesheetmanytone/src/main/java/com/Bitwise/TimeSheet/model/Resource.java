@@ -32,7 +32,7 @@ public class Resource {
 	private String team;
 	
 	@OneToMany(cascade = CascadeType.ALL)
-	//@JsonIgnoreProperties("resource")
+	
 	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
 	private List<TimeSheet> timesheet; 
 }
